@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: simple-todo-app-source
+  namespace: flux-system
+spec:
+  interval: 2m
+  url: https://github.com/nikolamicic21/devops-with-kubernetes-helsinki-fi-apps
+  ref:
+    branch: main
